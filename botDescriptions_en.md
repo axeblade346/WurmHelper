@@ -1,5 +1,43 @@
 # Bot types
 
+## Example - To auto craft bricks
+We are going to use 3 diffrent bots for this.
+
+Preperation:
+1) Full BSB 1 with rock shards.
+2) BSB 2 will be empty for bricks to go into.
+3) Take 1 rock shard and make 1 brick in your crafting window with the stone chissel in the LEFT slot.
+4) Have both the BSB windows open and your inventory.
+5) Max out the crafting que
+
+Setting it up :
+1)  Press F1 to open the console
+2)  bot big on   - activates the bulk item getter
+3)  Mouse over the rockshards in BSB 1.
+4)  bot big as  - adds the rockshards as a source (can have a few sources)
+5)  Mouse over an ITEM in your inventory
+6)  bot big at   - adds the target to "drag" the rockshards onto.
+--  You should now see rockshards being taken into your inventory
+7)  Make sure you have a brick selected in your crafting window.
+8)  bot c on  - activates crafting
+9)  bot c st rock shards - makes it drag all rock shards into the RIGHT slot.
+10) bot c ct - combines the rock shards into 1
+-- you should now see it make bricks till it runs out of shards in your inventory
+11) bot im on - activates the item mover 
+12) mouse over the empty BSB 2.
+13) bot im str - selects the BSB 2 as the target to move stuff too.
+14) bot im a stone brick - add stone bricks to the list of stuff to be moved.
+-- you should now see it move bricks into the empty bsb.
+
+It will repair the chisel once it reaches 10 damage (must be in the left crafting slot)
+
+When done:
+1) bot off -- turns off all bots
+or
+1) bot big off
+2) bot c off
+3) bot im off
+
 ## ar - ArcherBot
 
 Automatically shoots at selected target with currently equipped bow. When the string breaks tries to place a new one. Deactivates on target death.
